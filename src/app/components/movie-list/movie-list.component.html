@@ -1,0 +1,16 @@
+<section class="container">
+  <div class="row-header">
+    <h1>Latest Movies</h1>
+    <a href="">View More</a>
+  </div>
+  <section class="movies">
+    <article class="movie-card" *ngFor="let movie of latestMovies">
+      <div
+        class="poster-md"
+        [ngStyle]="{
+          'background-image': 'url(' + movie.medium_cover_image + ')'
+        }"
+      ></div>
+    </article>
+  </section>
+</section>
